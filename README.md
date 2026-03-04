@@ -280,7 +280,7 @@ Bu qadamda `aes.key` ni raw ikkilamchi formatga o‘tkazasiz. Sababi, RSA bilan 
 ### 🛡 6. RSA public kalit bilan AES kalitni shifrlash
 
 ```bash
-openssl pkeyutl -encrypt -pubin -inkey public.pem -in aes.raw -out kalit.enc -pkeyopt rsa_padding_mode:oaep -pkeyopt rsa_oaep_md:sha256 -pkeyopt rsa_mgf1_md:sha256
+openssl pkeyutl -encrypt -pubin -inkey public_key.pem -in aes.raw -out kalit.enc -pkeyopt rsa_padding_mode:oaep -pkeyopt rsa_oaep_md:sha256 -pkeyopt rsa_mgf1_md:sha256
 ```
 
 Bu yerda:
